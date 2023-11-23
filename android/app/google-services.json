@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1018814956534",
+    "project_id": "samplemovieapp-1600f",
+    "storage_bucket": "samplemovieapp-1600f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018814956534:android:b2a0c312a57e615eecbdd7",
+        "android_client_info": {
+          "package_name": "com.samplemovie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwiPW4nanr58o-G6ndMb3WhA4GUlKsJGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
