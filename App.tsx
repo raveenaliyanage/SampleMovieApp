@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import CustomIcon from './src/components/CustomIcon';
 
 import {
   Colors,
@@ -72,6 +73,7 @@ function App(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <CustomIcon name="search" size={25}/>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
