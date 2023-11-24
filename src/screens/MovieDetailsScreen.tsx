@@ -1,7 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import{Text, View, StyleSheet} from 'react-native';
 
-const MovieDetailsScreen =()=>{
+const MovieDetailsScreen =({navigation,route}:any) => {
+    
     return(
         <view style={styles.container}>
             <Text>MovieDeatailsScreen</Text>
