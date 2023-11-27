@@ -9,6 +9,7 @@ import {
   ScrollView,
   StatusBar,
   FlatList,
+  Button,
 } from 'react-native';
 import {COLORS, SPACING} from '../theme/theme';
 import {
@@ -21,6 +22,7 @@ import InputHeader from '../components/InputHeader';
 import CategoryHeader from '../components/CategoryHeader';
 import SubMovieCard from '../components/SubMovieCard';
 import MovieCard from '../components/MovieCard';
+import { FIREBASE_AUTH } from '../Config/firebase';
 
 const {width, height} = Dimensions.get('window');
 
@@ -122,7 +124,13 @@ const HomeScreen = ({navigation}: any) => {
 
       <View style={styles.InputHeaderContainer}>
         <InputHeader searchFunction={searchMoviesFunction} />
+       
       </View>
+      <View style={styles.LogoutContainer}>
+       
+        <Button color="#0000"  onPress={() => FIREBASE_AUTH.signOut()} title='Logout'/>
+      </View>
+      
 
       <CategoryHeader title={'Now Playing'} />
       <FlatList
@@ -229,6 +237,12 @@ const styles = StyleSheet.create({
   containerGap36: {
     gap: SPACING.space_36,
   },
+  LogoutContainer:{
+    marginVertical: 8,
+    marginHorizontal: 50,
+    
+  },
+
 });
 
 export default HomeScreen;
