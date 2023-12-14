@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   ticketBGImage: {
     alignSelf: 'center',
     width: 300,
-    aspectRatio: 200 / 300,
+    aspectRatio: 300 / 350,
     borderTopLeftRadius: BORDERRADIUS.radius_25,
     borderTopRightRadius: BORDERRADIUS.radius_25,
     overflow: 'hidden',

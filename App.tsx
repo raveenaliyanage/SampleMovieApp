@@ -20,17 +20,17 @@ function InsideLayout(){
               <InsideStack.Screen
           name="Tab"
           component={TabNavigator}
-          options={{animation: 'default'}}
+          options={{animation: 'default',headerShown: false}}
         />
         <InsideStack.Screen
           name="MovieDetails"
           component={MovieDetailsScreen}
-          options={{animation: 'slide_from_right'}}
+          options={{animation: 'slide_from_right',headerShown: false}}
         />
         <InsideStack.Screen
           name="SeatBooking"
           component={SeatBookingScreen}
-          options={{animation: 'slide_from_bottom'}}
+          options={{animation: 'slide_from_bottom',headerShown: false}}
         />
     </InsideStack.Navigator>
 

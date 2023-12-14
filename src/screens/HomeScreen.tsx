@@ -126,10 +126,7 @@ const HomeScreen = ({navigation}: any) => {
         <InputHeader searchFunction={searchMoviesFunction} />
        
       </View>
-      <View style={styles.LogoutContainer}>
-       
-        <Button color="#0000"  onPress={() => FIREBASE_AUTH.signOut()} title='Logout'/>
-      </View>
+      
       
 
       <CategoryHeader title={'Now Playing'} />
@@ -237,11 +234,7 @@ const styles = StyleSheet.create({
   containerGap36: {
     gap: SPACING.space_36,
   },
-  LogoutContainer:{
-    marginVertical: 8,
-    marginHorizontal: 50,
-    
-  },
+  
 
 });
 
